@@ -1,22 +1,23 @@
 # Lagged Hilbert autocoherence (LHaC)
-Lagged Hilbert autocoherence, phase-locking value, and amplitude autocoherence. Library accompanying
-the paper Zhang et al. (2024) "Multi-scale parameterization of neural rhythmicity with lagged Hilbert
-autocoherence"
+Python and MATLAB implementations of lagged Hilbert autocoherence, phase-locking value and amplitude autocoherence, with example analyses and simulations.
 
-<https://www.biorxiv.org/content/10.1101/2024.12.05.627017v2.abstract>
+## Paper
 
+Zhang, S., Szul, M. J., Papadopoulos, S., Massera, A., Rayson, H., & Bonaiuto, J. J. (2025). [Multi-scale parameterization of neural rhythmicity with lagged Hilbert autocoherence](https://doi.org/10.1162/IMAG.a.993). *Imaging Neuroscience*.
+
+[Canonical repository](https://github.com/danclab/lagged_hilbert_autocoherence) · [Preprint](https://doi.org/10.1101/2024.12.05.627017)
 
 ## Requirements
 python version: joblib, scipy, numpy, MNE
 
 matlab version: parallel processing toolbox, signal processing toolbox
 
-# Python files
+## Python files
 - lagged_autocoherence.py: Core functions
 - demo.ipynb: Demonstration of the new lagged autocoherence algorithm
 - multi_trial_demo.ipynb: Demonstration of new lagged autocoherence algorithm with multiple trials
 
-# Matlab files
+## MATLAB files
 - lagged_hilbert_autocoherence.m: Core function
 - generate_surrogate.m: Phase-shuffled surrogate data generation
 - demo.m: Demonstration of new lagged autocoherence algorithm
@@ -25,7 +26,7 @@ matlab version: parallel processing toolbox, signal processing toolbox
 - irfft.m: Inverse Fourier transform of real signal
 - hilbert.m: Hilbert transform
 
-# Analyses from Zhang et al. (2024)
+## Paper analyses
 - python/run_sims_0_surrogate_comparison.py: Compare phase-shuffled and ARMA surrogates
 - python/run_sims_1_joint_amp_norm_factor.py: Investigate joint amplitude normalization factor inflation
 - python/run_sims_2_oscillation.py: Run oscillation simulations
